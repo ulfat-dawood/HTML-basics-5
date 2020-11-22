@@ -40,17 +40,37 @@ section{
 	border-radius: 10px;
 	box-shadow: 0 0 5px 5px #f0f0f0;
 	text-align: left;
+	transition: all .3s ease-in;
 
+}
+section:hover{
+	box-shadow: 0 0 10px 5px #e8e8e8;
 }
 code{
 	font-size: 3rem;
 }
+h1, h2, h3{
+	letter-spacing: -3px;
+	font-weight: normal;
+}
+
 .title{
 	padding:.5rem 1rem;
 	border-bottom: 2px solid #abced4;
 	width: fit-content; 
 	margin:auto;
+	font-weight:  500;	
+	text-transform: uppercase;
+}
+h2{
+	/* border-bottom: 2px solid #abced4; */
+	color:#abced4;
+	font-weight: 500;
+	width: fit-content;
 	
+}
+b{
+	font-weight: 600;
 }
 
 
