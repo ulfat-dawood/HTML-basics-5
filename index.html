@@ -74,35 +74,89 @@
                 <li>autofocus</li>
                 <li>autocomplete: on/off</li>
                 <li>form: &lt;form&gt; id</li>
-                <li>type: button | 
-                        checkbox | 
-                        color | 
-                        date | 
-                        datetime-local | 
-                        email | 
-                        file | 
-                        hidden | 
-                        image | 
-                        month | 
-                        number | 
-                        password | 
-                        radio | 
-                        range | 
-                        reset | 
-                        search | 
-                        submit | 
-                        tel | 
-                        text | 
-                        time | 
-                        url | 
-                        week</li>
-
+                <li>type: text | number | email | password | checkbox | radio | date | time | datetime | week | month | tel | 
+                          search | file | search | button | submit | image | url | color | range | reset | hidden</li>
                 <p>validation:</p>
                 <li>required</li>
                 <li>pattern: regular expression validation</li>
                 <li>max/min: max/min number/date</li>
                 <li>maxlength/minlength: max/min number of characters</li>
             </ul>
+        </section>
+
+        <h1 class="title">Input Tag</h1>
+        <section>
+            <h2>text / password</h2>
+
+            <form>
+                <p>Fill the required field and submit</p>
+                <label for="username">*Username: ( 3-7 char)</label><br>
+                <input type="text" id="username" placeholder="username" minlength="3" maxlength="7" required><br>
+                
+                <label for="pswrd">*Password: (numbers & characters only)</label><br>
+                <input type="password" id="pswrd" placeholder="password" pattern="^[0-9a-zA-Z \-'_]+$"  required><br>
+
+                <input type="submit" value=SUBMIT>
+            </form>
+            <br>
+        </section>
+        <section>
+
+            <h2>number</h2>
+            <form>
+                    <label for="qty">Enter Quantity: (between 1-8)</label><br>
+                    <input type="number" id="qty"  min="1" max="8" size="100">
+            </form>
+            <br>
+
+    
+            <h2>email</h2>
+
+            <form>
+                
+                <label for="email">*Enter a valid email and submit:</label><br>
+                <input type="email" id="email" placeholder="example@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="submit" value=SUBMIT>
+            </form>
+            <br>
+        </section>
+
+        <section>
+            <h2>checkbox / radio</h2>
+            Special attribute: <code>checked</code>
+<br><br>
+        <form>
+            <p>SELECT YOUR PIZZA:</p>
+            <p>Size:</p>
+            <input type="radio" id="small" name="size">
+            <label for="small">Small</label><br>
+
+            <input type="radio" id="meduim" name="size" checked>
+            <label for="meduim">Meduim</label><br>
+
+            <input type="radio" id="large" name="size">
+            <label for="large">Large</label><br>
+
+            <p>Topping:</p>
+            <input type="checkbox" id="Pepperoni" checked>
+            <label for="Pepperoni">Pepperoni</label><br>
+
+            <input type="checkbox" id="Mushrooms" >
+            <label for="Mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="Onions" >
+            <label for="Onions">Onions</label><br>
+
+            <input type="checkbox" id="Cheese" checked>
+            <label for="Cheese">Cheese</label><br>
+
+            <input type="checkbox" id="Olives" >
+            <label for="Olives">Olives</label><br><br>
+
+            <input type="checkbox" id="pay" required>
+            <label for="pay">I'll pay cash</label><br>
+            <input type="submit" value="ORDER" >
+        </form>
         </section>
 
     </div>
