@@ -16,6 +16,7 @@
         <h1 class="title">HTML Forms</h1>
 
         <section>
+            <h2>3 Main Tags :</h2>
         
                 <code>
                 &lt;form&gt;  <br>
@@ -23,14 +24,85 @@
                 &nbsp;&lt;input/&gt; <br>
                 &lt;/form&gt;
                 </code> 
-        
+
+            <h2>Other Tags</h2>
+            <code>
+                &lt;button&gt; <br>
+                &lt;textarea&gt; <br>
+                &lt;select&gt; <br>
+                &lt;option&gt; <br>
+                &lt;fieldset&gt; <br>
+                &lt;output&gt; <br>
+            </code>
         </section>
 
         <section>
-            <form action="POST">
+            <h2>Simple form</h2>
+
+            <form >
                 <label for="name">Name:</label>
-                <input id="name" type="text" placeholder="Enter name" />
+                <input id="name" type="number" max="5" placeholder="Enter name" />
+                
+                <input type="submit" value="SUBMIT">
             </form>
+        </section>
+
+        <h1 class="title">Attributes</h1>
+        <section>
+            <h2>&lt;form&gt;</h2>
+            <ul>
+                <li>action: URL</li>
+                <li>method: HTTP method</li>
+                <li>name: form name</li>
+            </ul>
+
+            <h2>&lt;label&gt;</h2>
+            defines label for &lt;input&gt;
+            <ul>
+                <li>for: &lt;input&gt; id</li>
+                <li>form: &lt;form&gt; id</li>
+            </ul>
+
+            <h2>&lt;input&gt;</h2>
+            <ul>
+                
+                <li>name: name for the input</li>
+                <li>placeholder: placeholder text</li>
+                <li>value: default input value</li>
+                <li>size: width</li>
+                <li>disabled</li>
+                <li>autofocus</li>
+                <li>autocomplete: on/off</li>
+                <li>form: &lt;form&gt; id</li>
+                <li>type: button | 
+                        checkbox | 
+                        color | 
+                        date | 
+                        datetime-local | 
+                        email | 
+                        file | 
+                        hidden | 
+                        image | 
+                        month | 
+                        number | 
+                        password | 
+                        radio | 
+                        range | 
+                        reset | 
+                        search | 
+                        submit | 
+                        tel | 
+                        text | 
+                        time | 
+                        url | 
+                        week</li>
+
+                <p>validation:</p>
+                <li>required</li>
+                <li>pattern: regular expression validation</li>
+                <li>max/min: max/min number/date</li>
+                <li>maxlength/minlength: max/min number of characters</li>
+            </ul>
         </section>
 
     </div>
