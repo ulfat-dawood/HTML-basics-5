@@ -80,5 +80,12 @@ b{
 	align-items: center;
 }
 
+#job{
+	border: 1px solid #eee;
+	background: #Fdfdfd; 
+	padding: 1em; 
+	border-radius: 10px;
+}
+
 
 

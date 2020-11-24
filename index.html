@@ -127,6 +127,7 @@
 <br><br>
         <form>
             <p>SELECT YOUR PIZZA:</p>
+
             <h3>Size :</h3>
             <input type="radio" id="small" name="size">
             <label for="small">Small</label><br>
@@ -136,6 +137,7 @@
 
             <input type="radio" id="large" name="size">
             <label for="large">Large</label><br>
+
 
             <h3>Toppings :</h3>
             <input type="checkbox" id="Pepperoni" checked>
@@ -157,6 +159,111 @@
             <label for="pay">I'll pay cash</label><br>
             <input type="submit" value="ORDER" >
         </form>
+        </section>
+
+        <h1 class="title">Temporal Input tag</h1>
+
+        <section>
+            <h2>Date</h2>
+
+            <form>
+                <label for="dob">Enetr you DOB to verify you're +10</label><br>
+                <input type="date" id="dob" max="2011-01-01">
+
+                <input type="submit" value="SUBMIT">
+            </form>
+
+            <h2>Time</h2>
+            <form>
+                <label for="tm">Select a your class time, and submit: <br>
+                    (between 8:00 am - 1:00 pm)</label><br>
+                <input type="time" id="tm" min="08:00" max="13:00">
+
+                <input type="submit" value="SUBMIT">
+
+            </form>
+
+            <h2>date time</h2>
+            <form>
+                <label for="dt-tm">Select a date and time:</label><br>
+                <input type="datetime-local" id="dt-tm">
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+            <h2>Week</h2>
+            <form>
+                <label for="week">Select a week in 2021:</label><br>
+                <input type="week" id="week" min="2021-W18" max="2021-W26" >
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+
+            <h2>Month</h2>
+            <form>
+                <label for="month">Course starts in Dec. <br> If you want to change select another month:</label><br>
+                <input type="month" id="month" value="2021-12">
+    
+                <input type="submit" value="SUBMIT">
+            </form>
+
+
+        </section>
+
+        <h1 class="title">Other Input Tags</h1>
+        <section>
+            <h2>File / Tel / URL / Reset</h2>
+                file validation attribute:
+                <ul><li>accept: file_extension | audio/* | video/* | image/* | media_type</li>
+                <li>multiple: accpets multiple files</li></ul>
+               
+                
+                <form id="job">
+                    <label form="job"><h3>Developer Job Opening</h3></label><br>
+
+                    <label for="cv">*Upload your CV: (pdf only)</label>
+                    <input type="file" accept="application/pdf" required><br><br>
+
+                    <label for="github">Show us your work:</label><br>
+                    <input type="url"  id="github" placeholder="Github URL"><br><br>
+
+                    <label for="contact">Your contact:</label><br>
+                    <input type="tel"  id="contact" required value="+91"><br><br>
+
+                    <input type="reset" value="RESET FORM">
+                    <input type="submit" value="APPLY">
+
+                </form>
+        </section>
+
+        <section>
+
+            <h2>Search</h2>
+                <input type="search" name="" id="">
+            <h2>Image</h2>
+                <input type="image" src="./img/submit.png" width="100px">
+            <h2>Color</h2>
+                <input type="color" value="#FFFFFF">
+            <h2>Range</h2>
+            <label for="volum">Set the volume:</label><br>
+            <input type="range" id="volume" value="8" min="0" max="10">
+        </section>
+
+        <h1 class="title">Other Form Tags</h1>
+
+        <section>
+            <h2>&lt;textarea&gt;</h2>
+        </section>
+
+        <section>
+            <h2>&lt;textarea&gt;</h2>
+        </section>
+
+        <section>
+            <h2>&lt;textarea&gt;</h2>
         </section>
 
     </div>
